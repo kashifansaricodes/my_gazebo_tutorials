@@ -1,7 +1,7 @@
-## ROS-2 Programming Assignment 4
+# ROS2 Walker Algorithm with Finite State Machine (FSM)
 
 ---
-![Screenshot from 2024-11-24 17-39-18](https://github.com/user-attachments/assets/1a43f6b6-78ee-4b5d-9c16-77b24ae79cc2)
+![Screenshot from 2024-11-24 17-39-18](https://github.com/user-attachments/assets/8eac3691-4d57-4a58-9108-fd5990a065a7)
 ---
 [Watch the video here](https://drive.google.com/file/d/1c8wnbFrWuQQHwjEAGf4uR8vH-duCqmn8/view?usp=sharing)
 ---
