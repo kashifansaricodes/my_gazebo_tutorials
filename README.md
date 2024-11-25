@@ -6,8 +6,6 @@
 [Watch the video here](https://drive.google.com/file/d/1c8wnbFrWuQQHwjEAGf4uR8vH-duCqmn8/view?usp=sharing)
 ---
 
-
-
 A ROS2 implementation of a Roomba-like walker algorithm for the Turtlebot3 using the State Design Pattern. The robot autonomously navigates by moving forward until it encounters obstacles, then rotates in alternating directions until finding a clear path.
 
 The FSM used has two states that control the robot's movement:
@@ -145,5 +143,3 @@ ros2 topic echo /scan
 ```bash
 ros2 node list
 ```
-
-

@@ -1,0 +1,2 @@
+kashif@kashifpc:~/SDR/my_gazebo_tutorials$ clang-tidy -p compile_commands.json --extra-arg=-std=c++17 src/walker_node.cpp src/main.cpp
+kashif@kashifpc:~/SDR/my_gazebo_tutorials$
