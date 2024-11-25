@@ -10,7 +10,7 @@ def generate_launch_description():
     # Declare launch argument for enabling/disabling rosbag recording
     record_arg = DeclareLaunchArgument(
         'record',
-        default_value='true',
+        default_value='false',
         description='Whether to record rosbag or not'
     )
     
