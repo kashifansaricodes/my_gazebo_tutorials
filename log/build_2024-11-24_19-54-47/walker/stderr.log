@@ -1,0 +1,16 @@
+[01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kwalker/walker_bot.hpp: No such file or directory
+    1 | #include [01;31m[K"walker/walker_bot.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robot_control.dir/build.make:90: CMakeFiles/robot_control.dir/src/walker_node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:19:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   19 |   return 0;
+      |            [01;31m[K^[m[K
+[01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:14:33:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   14 | int main(int argc, char** argv) [01;36m[K{[m[K
+      |                                 [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/robot_control.dir/build.make:76: CMakeFiles/robot_control.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

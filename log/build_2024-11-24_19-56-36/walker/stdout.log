@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target robot_control[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/robot_control.dir/src/main.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable robot_control[0m
+[100%] Built target robot_control
+-- Install configuration: ""
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/lib/walker/robot_control
+-- Set runtime path of "/home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/lib/walker/robot_control" to ""
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/include/
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/include//walker
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/include//walker/walker_node.hpp
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/launch
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/launch/walker_launch.py
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/ament_index/resource_index/package_run_dependencies/walker
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/ament_index/resource_index/parent_prefix_path/walker
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/environment/ament_prefix_path.sh
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/environment/ament_prefix_path.dsv
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/environment/path.sh
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/environment/path.dsv
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/local_setup.bash
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/local_setup.sh
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/local_setup.zsh
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/local_setup.dsv
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/package.dsv
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/ament_index/resource_index/packages/walker
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/cmake/walkerConfig.cmake
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/cmake/walkerConfig-version.cmake
+-- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/package.xml

@@ -1,0 +1,31 @@
+[0.007s] Invoking command in '/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker -- -j20 -l20
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target robot_control[0m
+[0.065s] [ 33%] [32mBuilding CXX object CMakeFiles/robot_control.dir/src/main.cpp.o[0m
+[1.953s] [ 66%] [32m[1mLinking CXX executable robot_control[0m
+[2.225s] [100%] Built target robot_control
+[2.237s] Invoked command in '/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker -- -j20 -l20
+[2.282s] Invoking command in '/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker
+[2.290s] -- Install configuration: ""
+[2.290s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/lib/walker/robot_control
+[2.294s] -- Set runtime path of "/home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/lib/walker/robot_control" to ""
+[2.294s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/include/
+[2.294s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/include//walker
+[2.294s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/include//walker/walker_node.hpp
+[2.294s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/launch
+[2.295s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/launch/walker_launch.py
+[2.295s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/ament_index/resource_index/package_run_dependencies/walker
+[2.295s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/ament_index/resource_index/parent_prefix_path/walker
+[2.295s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/environment/ament_prefix_path.sh
+[2.295s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/environment/ament_prefix_path.dsv
+[2.295s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/environment/path.sh
+[2.295s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/environment/path.dsv
+[2.295s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/local_setup.bash
+[2.295s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/local_setup.sh
+[2.296s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/local_setup.zsh
+[2.296s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/local_setup.dsv
+[2.296s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/package.dsv
+[2.296s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/ament_index/resource_index/packages/walker
+[2.296s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/cmake/walkerConfig.cmake
+[2.296s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/cmake/walkerConfig-version.cmake
+[2.296s] -- Installing: /home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker/share/walker/package.xml
+[2.299s] Invoked command in '/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker

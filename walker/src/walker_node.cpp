@@ -1,4 +1,4 @@
-#include "walker/walker_bot.hpp"
+#include "walker/walker_node.hpp"
 
 /**
  * @brief Constructs a new Walker object.
