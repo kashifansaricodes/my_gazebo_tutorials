@@ -1,45 +1,71 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import ExecuteProcess, IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
-from ament_index_python.packages import get_package_share_directory
-import os
+from launch.actions import ExecuteProcess, TimerAction, RegisterEventHandler, DeclareLaunchArgument
+from launch.event_handlers.on_process_start import OnProcessStart
+from launch.substitutions import FindExecutable, LaunchConfiguration
+from launch.conditions import IfCondition
+import datetime
 
 def generate_launch_description():
-    # Get the turtlebot3 gazebo package directory
-    pkg_gazebo_ros = get_package_share_directory('turtlebot3_gazebo')
-    
-    # Set Gazebo model path
-    gazebo_model_path = os.path.join(pkg_gazebo_ros, 'models')
-    if 'GAZEBO_MODEL_PATH' in os.environ:
-        os.environ['GAZEBO_MODEL_PATH'] += ":" + gazebo_model_path
-    else:
-        os.environ['GAZEBO_MODEL_PATH'] = gazebo_model_path
-
-    # Launch Gazebo
-    gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(pkg_gazebo_ros, 'launch', 'gazebo.launch.py'),
-        )
+    # Declare launch argument for enabling/disabling rosbag recording
+    record_arg = DeclareLaunchArgument(
+        'record',
+        default_value='true',
+        description='Whether to record rosbag or not'
     )
-
-    # Your walker node
+    
+    # Get current timestamp for the bag file name
+    timestamp = datetime.datetime.now().strftime('%Y_%m_%d-%H_%M_%S')
+    
+    # Walker node
     walker_node = Node(
         package='walker',
-        executable='walker_node',
-        name='walker_node',
+        executable='robot_control',
+        name='walker',
         output='screen'
     )
-
+    
+    # ROS bag recording process
+    rosbag_record = ExecuteProcess(
+        condition=IfCondition(LaunchConfiguration('record')),
+        cmd=[[
+            FindExecutable(name='ros2'),
+            ' bag record',
+            ' -a',
+            ' --exclude "/camera/.*"',
+            ' -o walker_recording_',
+            timestamp,
+        ]],
+        shell=True
+    )
+    
+    # Timer to stop recording after 15 seconds
+    timer_action = TimerAction(
+        period=15.0,
+        actions=[
+            ExecuteProcess(
+                cmd=[[
+                    FindExecutable(name='ros2'),
+                    ' bag shutdown'
+                ]],
+                shell=True
+            )
+        ],
+        condition=IfCondition(LaunchConfiguration('record'))
+    )
+    
+    # Register event handler to start the timer when rosbag recording starts
+    start_timer_event = RegisterEventHandler(
+        condition=IfCondition(LaunchConfiguration('record')),
+        event_handler=OnProcessStart(
+            target_action=rosbag_record,
+            on_start=[timer_action]
+        )
+    )
+    
     return LaunchDescription([
-        # Set env var for Gazebo
-        ExecuteProcess(
-            cmd=['bash', '-c', 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH'],
-            output='screen'
-        ),
-        # Launch Gazebo
-        gazebo,
-        # Your walker node
-        walker_node
+        record_arg,
+        walker_node,
+        rosbag_record,
+        start_timer_event
     ])
