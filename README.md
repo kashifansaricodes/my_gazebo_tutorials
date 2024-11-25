@@ -1,6 +1,4 @@
-## ROS-2 Programming Assignment_1 - Publisher/Subscriber
-
-Hello! this is a ROS2 package 'beginner_tutorials' made for the ROS 2 Programming Assignment_1. 
+## ROS-2 Programming Assignment 4
 
 ### Dependencies and Requirements
 
