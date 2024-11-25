@@ -1,0 +1,4 @@
+kashif@kashifpc:~/SDR/my_gazebo_tutorials$ cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order src/my_gazebo_tutorials/src/*.cpp
+Done processing src/walker_node.cpp
+Done processing src/main.cpp
+
