@@ -10,11 +10,11 @@ A ROS2 implementation of a Roomba-like walker algorithm for the Turtlebot3 using
 
 The FSM used has two states that control the robot's movement:
 
-ForwardState
+ForwardState: 
 Moves straight (0.5 m/s)
 Switches to rotation if obstacle detected within 0.8m
 
-RotationState
+RotationState: 
 Rotates in place (±0.3 rad/s)
 Initial 10-second rotation
 Continues rotating until path is clear
