@@ -1,125 +1,158 @@
-#ifndef WALKER_NODE_HPP_
-#define WALKER_NODE_HPP_
+#ifndef WALKER_WALKER_BOT_HPP
+#define WALKER_WALKER_BOT_HPP
 
-#include <rclcpp/rclcpp.hpp>
-#include <geometry_msgs/msg/twist.hpp>
-#include <sensor_msgs/msg/laser_scan.hpp>
-#include <memory>
-#include "walker/walker_state.hpp"
+#include "geometry_msgs/msg/twist.hpp"
+#include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/laser_scan.hpp"
+
+// Forward declaration
+class WalkerState;
 
 /**
- * @class WalkerNode
- * @brief Main ROS2 node class that implements the walker behavior
+ * @class Walker
+ * @brief Main robot control class implementing obstacle avoidance behavior.
  *
- * This class implements a ROS2 node that makes a robot move forward until it 
- * encounters an obstacle, then rotates until the path is clear. It uses the
- * State pattern to manage different behaviors.
+ * The Walker class manages the robot's movement and state transitions based on
+ * laser scan data. It implements a state pattern to handle different behaviors
+ * for forward movement and rotation.
  */
-class WalkerNode : public rclcpp::Node {
+class Walker : public rclcpp::Node {
  public:
-    /**
-     * @brief Default constructor
-     */
-    WalkerNode();
-    
-    /**
-     * @brief Constructor with parameters
-     * @param options ROS2 node options
-     * @param linear_vel Forward velocity in m/s
-     * @param angular_vel Rotation velocity in rad/s
-     * @param min_dist Minimum obstacle distance in meters
-     */
-    explicit WalkerNode(
-        const rclcpp::NodeOptions& options,
-        double linear_vel = 0.2,
-        double angular_vel = 0.5,
-        double warn_distance = 1.0,    // New: Warning threshold
-        double crit_distance = 0.5,    // New: Critical threshold
-        double emerg_distance = 0.3    // New: Emergency threshold
-    );
-    
-    /**
-     * @brief Changes the current state of the walker
-     * @param new_state Unique pointer to the new state object
-     */
-    void change_state(std::unique_ptr<WalkerState> new_state);
-    
-    // Getter methods for parameters
-    /**
-     * @brief Gets the current linear velocity
-     * @return Linear velocity in m/s
-     */
-    double get_linear_velocity() const { return linear_velocity_; }
-    
-    /**
-     * @brief Gets the current angular velocity
-     * @return Angular velocity in rad/s
-     */
-    double get_angular_velocity() const { return angular_velocity_; }
-    
-    /**
-     * @brief Gets the minimum obstacle distance
-     * @return Minimum distance in meters
-     */
-    double get_min_distance() const { return min_distance_; }
-    
-    /**
-     * @brief Gets the name of the current state
-     * @return String representing current state
-     */
-    std::string get_current_state_name() const { 
-        return current_state_->get_state_name(); 
-    }
+  /**
+   * @brief Constructor initializing the Walker node.
+   *
+   * Sets up publishers, subscribers, and initializes the robot in ForwardState.
+   */
+  Walker();
 
-    /**
-     * @brief Callback function for laser scan messages
-     * @param msg Shared pointer to laser scan message
-     */
-    void laser_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg);
+  /**
+   * @brief Changes the current state of the Walker.
+   * @param new_state Pointer to the new state to transition to.
+   *
+   * Deletes the current state and transitions to the provided new state.
+   */
+  void change_state(WalkerState* new_state);
 
-    double get_warning_distance() const { return warning_distance_; }
-    double get_critical_distance() const { return critical_distance_; }
-    double get_emergency_distance() const { return emergency_distance_; }
-    double get_current_linear_vel() const { return current_linear_vel_; }
+  /**
+   * @brief Publishes velocity commands to the robot.
+   * @param linear Linear velocity in meters per second.
+   * @param angular Angular velocity in radians per second.
+   */
+  void publish_velocity(double linear, double angular);
 
-    // Methods for testing purposes
-    /**
-     * @brief Gets the last published velocity command
-     * @return Last velocity command sent to the robot
-     */
-    geometry_msgs::msg::Twist get_last_velocity_command() const {
-        return last_cmd_;
-    }
-    
-    /**
-     * @brief Publishes a velocity command
-     * @param cmd Velocity command to publish
-     */
-    void publish_velocity(const geometry_msgs::msg::Twist& cmd) {
-        last_cmd_ = cmd;
-        publisher_->publish(cmd);
-    }
+  /**
+   * @brief Checks if the path ahead is clear of obstacles.
+   * @param scan Shared pointer to the laser scan data.
+   * @return true if path is clear, false if obstacle detected.
+   */
+  bool is_path_clear(const sensor_msgs::msg::LaserScan::SharedPtr scan) const;
+
+  /**
+   * @brief Toggles the rotation direction between clockwise and
+   * counter-clockwise.
+   */
+  void toggle_rotation_direction();
+
+  /**
+   * @brief Gets the current rotation direction.
+   * @return 1.0 for counter-clockwise, -1.0 for clockwise rotation.
+   */
+  double get_rotation_direction() const { return rotation_direction_; }
+
+  /**
+   * @brief Creates a timer with specified period and callback.
+   * @param period Duration between timer callbacks.
+   * @param callback Function to be called when timer expires.
+   * @return Shared pointer to the created timer.
+   */
+  rclcpp::TimerBase::SharedPtr create_timer(
+      const std::chrono::duration<double>& period,
+      std::function<void()> callback);
 
  private:
-    // ROS2 communication members
-    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;  ///< Publisher for velocity commands
-    rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr subscription_;  ///< Subscriber for laser scan data
-    
-    // State machine members
-    std::unique_ptr<WalkerState> current_state_;  ///< Current state of the walker
-    bool rotate_clockwise_;  ///< Flag for rotation direction
-    
-    // Robot parameters
-    double linear_velocity_;   ///< Forward speed in m/s
-    double angular_velocity_;  ///< Rotation speed in rad/s
-    double min_distance_;      ///< Minimum obstacle distance in m
-    
-    // Testing support
-    geometry_msgs::msg::Twist last_cmd_;  ///< Stores last velocity command
-    double warning_distance_;   // Distance to start slowing down
-    double critical_distance_;  // Distance to stop and rotate
-    double emergency_distance_; // Distance for emergency stop
-    double current_linear_vel_; // Current linear velocity
+  /**
+   * @brief Callback function for processing laser scan messages.
+   * @param scan Shared pointer to the received laser scan message.
+   */
+  void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr scan);
+
+  WalkerState* current_state_;  ///< Pointer to current state object
+  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr
+      vel_publisher_;  ///< Velocity command publisher
+  rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr
+      scan_subscriber_;        ///< Laser scan subscriber
+  double rotation_direction_;  ///< Current rotation direction (1.0 for CCW,
+                               ///< -1.0 for CW)
+  const double SAFE_DISTANCE =
+      0.8;  ///< Minimum safe distance from obstacles in meters
 };
 
-#endif  // WALKER_NODE_HPP_
+/**
+ * @class WalkerState
+ * @brief Abstract base class for Walker states.
+ *
+ * Defines the interface for different states of the Walker robot.
+ */
+class WalkerState {
+ public:
+  /**
+   * @brief Virtual destructor ensuring proper cleanup of derived classes.
+   */
+  virtual ~WalkerState() = default;
+
+  /**
+   * @brief Pure virtual function to handle robot behavior in current state.
+   * @param walker Pointer to the Walker object.
+   * @param scan Shared pointer to laser scan data.
+   */
+  virtual void handle(Walker* walker,
+                      const sensor_msgs::msg::LaserScan::SharedPtr scan) = 0;
+};
+
+/**
+ * @class ForwardState
+ * @brief State implementing forward movement behavior.
+ *
+ * Handles robot behavior when moving forward, including obstacle detection
+ * and state transitions.
+ */
+class ForwardState : public WalkerState {
+ public:
+  /**
+   * @brief Handles forward movement and obstacle detection.
+   * @param walker Pointer to the Walker object.
+   * @param scan Shared pointer to laser scan data.
+   */
+  void handle(Walker* walker,
+              const sensor_msgs::msg::LaserScan::SharedPtr scan) override;
+};
+
+/**
+ * @class RotationState
+ * @brief State implementing rotation behavior.
+ *
+ * Manages robot behavior during rotation, including timed rotations
+ * and path checking.
+ */
+class RotationState : public WalkerState {
+ public:
+  /**
+   * @brief Constructor initializing rotation state parameters.
+   */
+  RotationState() : initial_rotation_(true), rotation_timer_(nullptr) {}
+
+  /**
+   * @brief Handles rotation behavior and state transitions.
+   * @param walker Pointer to the Walker object.
+   * @param scan Shared pointer to laser scan data.
+   */
+  void handle(Walker* walker,
+              const sensor_msgs::msg::LaserScan::SharedPtr scan) override;
+
+ private:
+  bool initial_rotation_;  ///< Flag tracking initial rotation period
+  rclcpp::TimerBase::SharedPtr
+      rotation_timer_;  ///< Timer for managing rotation duration
+};
+
+#endif 
