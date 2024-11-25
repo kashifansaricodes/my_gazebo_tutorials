@@ -1,5 +1,11 @@
 ## ROS-2 Programming Assignment 4
 
+---
+![Screenshot from 2024-11-24 17-39-18](https://github.com/user-attachments/assets/1a43f6b6-78ee-4b5d-9c16-77b24ae79cc2)
+---
+[Watch the video here](https://drive.google.com/file/d/1c8wnbFrWuQQHwjEAGf4uR8vH-duCqmn8/view?usp=sharing)
+---
+
 ### Dependencies and Requirements
 
 - Ubuntu 22.04 (If running locally)
