@@ -1,4 +1,4 @@
-# ROS2 Walker Algorithm with State Pattern
+# ROS2 Walker Algorithm with Finite State Machine (FSM)
 
 ---
 ![Screenshot from 2024-11-24 17-39-18](https://github.com/user-attachments/assets/8eac3691-4d57-4a58-9108-fd5990a065a7)
