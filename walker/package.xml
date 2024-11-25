@@ -4,17 +4,17 @@
   <name>walker</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="kansari@umd.edu">abhishek</maintainer>
+  <maintainer email="kansari@umd.edu">sachin33sj</maintainer>
   <license>TODO: License declaration</license>
-
+  
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>rclcpp</depend>
-  <depend>geometry_msgs</depend>
   <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
 
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
+  <depend>launch_ros</depend>
+  <depend>launch</depend>
 
   <export>
     <build_type>ament_cmake</build_type>
