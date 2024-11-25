@@ -1,4 +1,14 @@
-
+/**
+ * @file main.cpp
+ * @brief Main entry point for the Walker node application.
+ *
+ * This file contains the main function which initializes the ROS 2 framework,
+ * creates an instance of the Walker node, and spins it until the application
+ * is shut down.
+ *
+ * @author Kashif Ansari
+ * @date 2023
+ */
 #include "walker/walker_node.hpp"
 
 /**

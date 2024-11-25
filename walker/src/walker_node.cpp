@@ -65,6 +65,16 @@ void Walker::publish_velocity(double linear, double angular) {
  * Examines laser scan data in a 90-degree arc in front of the robot
  * (45 degrees on each side) for obstacles within SAFE_DISTANCE.
  */
+/**
+ * @brief Checks if the path is clear within a specified arc range.
+ *
+ * This function checks the laser scan data to determine if there are any obstacles
+ * within a specified arc range in front of the walker. It checks both the left and
+ * right sides of the front arc.
+ *
+ * @param scan A shared pointer to the LaserScan message containing range data.
+ * @return true if the path is clear within the specified arc range, false if an obstacle is detected.
+ */
 bool Walker::is_path_clear(
     const sensor_msgs::msg::LaserScan::SharedPtr scan) const {
   const int left_start = 0;     ///< Front center
