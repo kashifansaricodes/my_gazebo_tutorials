@@ -1,0 +1,185 @@
+[0.000000] (-) TimerEvent: {}
+[0.000202] (walker) JobQueued: {'identifier': 'walker', 'dependencies': OrderedDict()}
+[0.000501] (walker) JobStarted: {'identifier': 'walker'}
+[0.006427] (walker) JobProgress: {'identifier': 'walker', 'progress': 'cmake'}
+[0.006576] (walker) JobProgress: {'identifier': 'walker', 'progress': 'build'}
+[0.006979] (walker) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker', '--', '-j20', '-l20'], 'cwd': '/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kashif'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kashif'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/kashif/SDR/temp3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1989'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=149241e3e0c7b99bccf502e2673f93a9'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/kashif/SDR/temp3/my_gazebo_tutorials/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'kashif'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kashif'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/kashif/miniconda3/condabin:/opt/ros/humble/bin:/home/kashif/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kashifpc:@/tmp/.ICE-unix/1989,unix/kashifpc:/tmp/.ICE-unix/1989'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/717b7e90_1295_4b10_ba00_293c0b0d5603'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.262'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '100'), ('AMENT_PREFIX_PATH', '/home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/kashif/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/kashif/miniconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=149241e3e0c7b99bccf502e2673f93a9'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kashif/SDR/temp3/my_gazebo_tutorials/install/walker:/opt/ros/humble')]), 'shell': False}
+[0.047963] (walker) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_control\x1b[0m\n'}
+[0.065385] (walker) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/robot_control.dir/src/main.cpp.o\x1b[0m\n'}
+[0.066937] (walker) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/robot_control.dir/src/walker_node.cpp.o\x1b[0m\n'}
+[0.099975] (-) TimerEvent: {}
+[0.190697] (walker) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:12\x1b[m\x1b[K:\n'}
+[0.190915] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:28:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstray \xe2\x80\x98\x1b[01m\x1b[K@\x1b[m\x1b[K\xe2\x80\x99 in program\n'}
+[0.190966] (walker) StderrLine: {'line': b'   28 |  * \x1b[01;31m\x1b[K@\x1b[m\x1b[Kbrief Main robot control class implementing obstacle avoidance behavior.\n'}
+[0.191004] (walker) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.191042] (walker) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:1\x1b[m\x1b[K:\n'}
+[0.191079] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:28:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstray \xe2\x80\x98\x1b[01m\x1b[K@\x1b[m\x1b[K\xe2\x80\x99 in program\n'}
+[0.191118] (walker) StderrLine: {'line': b'   28 |  * \x1b[01;31m\x1b[K@\x1b[m\x1b[Kbrief Main robot control class implementing obstacle avoidance behavior.\n'}
+[0.191165] (walker) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.191202] (walker) StderrLine: {'line': b"\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:30:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing terminating ' character\n"}
+[0.191239] (walker) StderrLine: {'line': b"   30 |  * The Walker class manages the robot\x1b[01;35m\x1b[K'\x1b[m\x1b[Ks movement and state transitions based on\n"}
+[0.191276] (walker) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.191310] (walker) StderrLine: {'line': b"\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:30:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing terminating ' character\n"}
+[0.191345] (walker) StderrLine: {'line': b"   30 |  * The Walker class manages the robot\x1b[01;35m\x1b[K'\x1b[m\x1b[Ks movement and state transitions based on\n"}
+[0.191380] (walker) StderrLine: {'line': b'      |                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.191414] (walker) StderrLine: {'line': b"\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:30:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing terminating ' character\n"}
+[0.191448] (walker) StderrLine: {'line': b"   30 |  * The Walker class manages the robot\x1b[01;31m\x1b[K's movement and state transitions based on\x1b[m\x1b[K\n"}
+[0.191485] (walker) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.191519] (walker) StderrLine: {'line': b"\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:30:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing terminating ' character\n"}
+[0.191553] (walker) StderrLine: {'line': b"   30 |  * The Walker class manages the robot\x1b[01;31m\x1b[K's movement and state transitions based on\x1b[m\x1b[K\n"}
+[0.191589] (walker) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.200152] (-) TimerEvent: {}
+[0.300478] (-) TimerEvent: {}
+[0.400879] (-) TimerEvent: {}
+[0.501274] (-) TimerEvent: {}
+[0.601672] (-) TimerEvent: {}
+[0.702067] (-) TimerEvent: {}
+[0.802378] (-) TimerEvent: {}
+[0.902799] (-) TimerEvent: {}
+[1.003208] (-) TimerEvent: {}
+[1.103630] (-) TimerEvent: {}
+[1.204079] (-) TimerEvent: {}
+[1.304498] (-) TimerEvent: {}
+[1.405026] (-) TimerEvent: {}
+[1.505461] (-) TimerEvent: {}
+[1.551010] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:28:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected constructor, destructor, or type conversion before \xe2\x80\x98\x1b[01m\x1b[KMain\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.551225] (walker) StderrLine: {'line': b'   28 |  * @brief \x1b[01;31m\x1b[KMain\x1b[m\x1b[K robot control class implementing obstacle avoidance behavior.\n'}
+[1.551273] (walker) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.551310] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:125:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.551348] (walker) StderrLine: {'line': b'  125 |     virtual void handle(\x1b[01;31m\x1b[KWalker\x1b[m\x1b[K *walker,\n'}
+[1.551384] (walker) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.551420] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:144:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.551455] (walker) StderrLine: {'line': b'  144 |     void handle(\x1b[01;31m\x1b[KWalker\x1b[m\x1b[K *walker,\n'}
+[1.551490] (walker) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.551524] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:168:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.551560] (walker) StderrLine: {'line': b'  168 |     void handle(\x1b[01;31m\x1b[KWalker\x1b[m\x1b[K *walker,\n'}
+[1.551606] (walker) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.553348] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:28:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected constructor, destructor, or type conversion before \xe2\x80\x98\x1b[01m\x1b[KMain\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.553443] (walker) StderrLine: {'line': b'   28 |  * @brief \x1b[01;31m\x1b[KMain\x1b[m\x1b[K robot control class implementing obstacle avoidance behavior.\n'}
+[1.553486] (walker) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.553524] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:125:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.553570] (walker) StderrLine: {'line': b'  125 |     virtual void handle(\x1b[01;31m\x1b[KWalker\x1b[m\x1b[K *walker,\n'}
+[1.553604] (walker) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.553637] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:144:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.553673] (walker) StderrLine: {'line': b'  144 |     void handle(\x1b[01;31m\x1b[KWalker\x1b[m\x1b[K *walker,\n'}
+[1.553704] (walker) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.553735] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:168:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.553766] (walker) StderrLine: {'line': b'  168 |     void handle(\x1b[01;31m\x1b[KWalker\x1b[m\x1b[K *walker,\n'}
+[1.553797] (walker) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.553938] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.553971] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:26:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.554004] (walker) StderrLine: {'line': b'   26 |   auto node = std::make_shared<\x1b[01;31m\x1b[KWalker\x1b[m\x1b[K>();\n'}
+[1.554034] (walker) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.554064] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:26:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.554095] (walker) StderrLine: {'line': b'   26 |   auto node = \x1b[01;31m\x1b[Kstd::make_shared<Walker>()\x1b[m\x1b[K;\n'}
+[1.554131] (walker) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[1.554163] (walker) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[1.554194] (walker) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:10\x1b[m\x1b[K,\n'}
+[1.554225] (walker) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7\x1b[m\x1b[K,\n'}
+[1.554256] (walker) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:4\x1b[m\x1b[K,\n'}
+[1.554286] (walker) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:12\x1b[m\x1b[K:\n'}
+[1.554462] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.554519] (walker) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[1.554559] (walker) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.554611] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.554667] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:26:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.554700] (walker) StderrLine: {'line': b'   26 |   auto node = \x1b[01;31m\x1b[Kstd::make_shared<Walker>()\x1b[m\x1b[K;\n'}
+[1.554732] (walker) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[1.554762] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:10:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.554792] (walker) StderrLine: {'line': b'   10 | \x1b[01;31m\x1b[KWalker\x1b[m\x1b[K::Walker() : Node("walker"), rotation_direction_(1.0) {\n'}
+[1.554823] (walker) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.554855] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:31:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.554886] (walker) StderrLine: {'line': b'   31 | void \x1b[01;31m\x1b[KWalker\x1b[m\x1b[K::scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr scan) {\n'}
+[1.554921] (walker) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.559541] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.559630] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:32:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_state_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.559671] (walker) StderrLine: {'line': b'   32 |   \x1b[01;31m\x1b[Kcurrent_state_\x1b[m\x1b[K->handle(this, scan);\n'}
+[1.559707] (walker) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.559740] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:32:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.559775] (walker) StderrLine: {'line': b'   32 |   current_state_->handle(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K, scan);\n'}
+[1.559808] (walker) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.559844] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.559877] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:41:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.559913] (walker) StderrLine: {'line': b'   41 | void \x1b[01;31m\x1b[KWalker\x1b[m\x1b[K::change_state(WalkerState* new_state) {\n'}
+[1.559946] (walker) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.562648] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid change_state(WalkerState*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.562689] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:42:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_state_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.562723] (walker) StderrLine: {'line': b'   42 |   delete \x1b[01;31m\x1b[Kcurrent_state_\x1b[m\x1b[K;\n'}
+[1.562757] (walker) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.562790] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.562821] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:53:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.562851] (walker) StderrLine: {'line': b'   53 | void \x1b[01;31m\x1b[KWalker\x1b[m\x1b[K::publish_velocity(double linear, double angular) {\n'}
+[1.562883] (walker) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.565074] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid publish_velocity(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.565116] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:57:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvel_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.565153] (walker) StderrLine: {'line': b'   57 |   \x1b[01;31m\x1b[Kvel_publisher_\x1b[m\x1b[K->publish(msg);\n'}
+[1.565184] (walker) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.565214] (walker) StderrLine: {'line': b'      |   \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[1.565244] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.565274] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:78:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.565304] (walker) StderrLine: {'line': b'   78 | bool \x1b[01;31m\x1b[KWalker\x1b[m\x1b[K::is_path_clear(\n'}
+[1.565334] (walker) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.565364] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:79:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knon-member function \xe2\x80\x98\x1b[01m\x1b[Kbool is_path_clear(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99 cannot have cv-qualifier\n'}
+[1.565396] (walker) StderrLine: {'line': b'   79 |     const sensor_msgs::msg::LaserScan::SharedPtr scan) \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K {\n'}
+[1.565426] (walker) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.567952] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool is_path_clear(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.567990] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:87:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSAFE_DISTANCE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.568024] (walker) StderrLine: {'line': b'   87 |     if (scan->ranges[i] < \x1b[01;31m\x1b[KSAFE_DISTANCE\x1b[m\x1b[K) {\n'}
+[1.568055] (walker) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.571086] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:96:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSAFE_DISTANCE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.571132] (walker) StderrLine: {'line': b'   96 |     if (scan->ranges[i] < \x1b[01;31m\x1b[KSAFE_DISTANCE\x1b[m\x1b[K) {\n'}
+[1.571163] (walker) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.571320] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.571352] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:111:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.571383] (walker) StderrLine: {'line': b'  111 | void \x1b[01;31m\x1b[KWalker\x1b[m\x1b[K::toggle_rotation_direction() { rotation_direction_ *= -1.0; }\n'}
+[1.571414] (walker) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.575077] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid toggle_rotation_direction()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.575132] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:111:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krotation_direction_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktoggle_rotation_direction\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.575174] (walker) StderrLine: {'line': b'  111 | void Walker::toggle_rotation_direction() { \x1b[01;31m\x1b[Krotation_direction_\x1b[m\x1b[K *= -1.0; }\n'}
+[1.575210] (walker) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.575243] (walker) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[Ktoggle_rotation_direction\x1b[m\x1b[K\n'}
+[1.575275] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.575305] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:119:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.575336] (walker) StderrLine: {'line': b'  119 | rclcpp::TimerBase::SharedPtr \x1b[01;31m\x1b[KWalker\x1b[m\x1b[K::create_timer(\n'}
+[1.575368] (walker) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.575399] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::TimerBase::SharedPtr create_timer(const std::chrono::duration<double>&, std::function<void()>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.575432] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:122:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.575464] (walker) StderrLine: {'line': b'  122 |   return \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->create_wall_timer(period, callback);\n'}
+[1.575495] (walker) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.575525] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.575554] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:134:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[Khandle\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[1.575584] (walker) StderrLine: {'line': b'  134 | void \x1b[01;31m\x1b[KRotationState\x1b[m\x1b[K::handle(Walker* walker,\n'}
+[1.575616] (walker) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.576906] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:134:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.576943] (walker) StderrLine: {'line': b'  134 | void RotationState::handle(\x1b[01;31m\x1b[KWalker\x1b[m\x1b[K* walker,\n'}
+[1.576974] (walker) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.578874] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:134:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwalker\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.578914] (walker) StderrLine: {'line': b'  134 | void RotationState::handle(Walker* \x1b[01;31m\x1b[Kwalker\x1b[m\x1b[K,\n'}
+[1.578944] (walker) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.578976] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:135:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.579007] (walker) StderrLine: {'line': b'  135 |                            \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K sensor_msgs::msg::LaserScan::SharedPtr scan) {\n'}
+[1.579037] (walker) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.579071] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:169:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[Khandle\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[1.579102] (walker) StderrLine: {'line': b'  169 | void \x1b[01;31m\x1b[KForwardState\x1b[m\x1b[K::handle(Walker* walker,\n'}
+[1.579132] (walker) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.580710] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:169:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KWalker\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.580750] (walker) StderrLine: {'line': b'  169 | void ForwardState::handle(\x1b[01;31m\x1b[KWalker\x1b[m\x1b[K* walker,\n'}
+[1.580782] (walker) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.582524] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:169:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwalker\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.582563] (walker) StderrLine: {'line': b'  169 | void ForwardState::handle(Walker* \x1b[01;31m\x1b[Kwalker\x1b[m\x1b[K,\n'}
+[1.582594] (walker) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.582624] (walker) StderrLine: {'line': b'\x1b[01m\x1b[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:170:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.582655] (walker) StderrLine: {'line': b'  170 |                           \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K sensor_msgs::msg::LaserScan::SharedPtr scan) {\n'}
+[1.582685] (walker) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.605564] (-) TimerEvent: {}
+[1.705927] (-) TimerEvent: {}
+[1.806340] (-) TimerEvent: {}
+[1.836869] (walker) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/robot_control.dir/build.make:76: CMakeFiles/robot_control.dir/src/main.cpp.o] Error 1\n'}
+[1.837053] (walker) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.867070] (walker) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/robot_control.dir/build.make:90: CMakeFiles/robot_control.dir/src/walker_node.cpp.o] Error 1\n'}
+[1.867520] (walker) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_control.dir/all] Error 2\n'}
+[1.867748] (walker) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.869725] (walker) CommandEnded: {'returncode': 2}
+[1.906428] (-) TimerEvent: {}
+[1.906717] (walker) JobEnded: {'identifier': 'walker', 'rc': 2}
+[1.917673] (-) EventReactorShutdown: {}

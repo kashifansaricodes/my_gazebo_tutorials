@@ -1,0 +1,10 @@
+/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker/CMakeFiles/uninstall.dir
+/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker/CMakeFiles/walker_uninstall.dir
+/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker/CMakeFiles/robot_control.dir
+/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker/CMakeFiles/test.dir
+/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker/CMakeFiles/edit_cache.dir
+/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker/CMakeFiles/rebuild_cache.dir
+/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker/CMakeFiles/list_install_components.dir
+/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker/CMakeFiles/install.dir
+/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker/CMakeFiles/install/local.dir
+/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker/CMakeFiles/install/strip.dir

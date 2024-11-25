@@ -1,0 +1,159 @@
+[0.008s] Invoking command in '/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker -- -j20 -l20
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target robot_control[0m
+[0.065s] [ 33%] [32mBuilding CXX object CMakeFiles/robot_control.dir/src/main.cpp.o[0m
+[0.066s] [ 66%] [32mBuilding CXX object CMakeFiles/robot_control.dir/src/walker_node.cpp.o[0m
+[0.190s] In file included from [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:12[m[K:
+[0.190s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:28:4:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K@[m[K’ in program
+[0.190s]    28 |  * [01;31m[K@[m[Kbrief Main robot control class implementing obstacle avoidance behavior.
+[0.191s]       |    [01;31m[K^[m[K
+[0.191s] In file included from [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:1[m[K:
+[0.191s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:28:4:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K@[m[K’ in program
+[0.191s]    28 |  * [01;31m[K@[m[Kbrief Main robot control class implementing obstacle avoidance behavior.
+[0.191s]       |    [01;31m[K^[m[K
+[0.191s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:30:38:[m[K [01;35m[Kwarning: [m[Kmissing terminating ' character
+[0.191s]    30 |  * The Walker class manages the robot[01;35m[K'[m[Ks movement and state transitions based on
+[0.191s]       |                                      [01;35m[K^[m[K
+[0.191s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:30:38:[m[K [01;35m[Kwarning: [m[Kmissing terminating ' character
+[0.191s]    30 |  * The Walker class manages the robot[01;35m[K'[m[Ks movement and state transitions based on
+[0.191s]       |                                      [01;35m[K^[m[K
+[0.191s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:30:38:[m[K [01;31m[Kerror: [m[Kmissing terminating ' character
+[0.191s]    30 |  * The Walker class manages the robot[01;31m[K's movement and state transitions based on[m[K
+[0.191s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.191s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:30:38:[m[K [01;31m[Kerror: [m[Kmissing terminating ' character
+[0.191s]    30 |  * The Walker class manages the robot[01;31m[K's movement and state transitions based on[m[K
+[0.191s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.551s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:28:11:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[KMain[m[K’
+[1.551s]    28 |  * @brief [01;31m[KMain[m[K robot control class implementing obstacle avoidance behavior.
+[1.551s]       |           [01;31m[K^~~~[m[K
+[1.551s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:125:25:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.551s]   125 |     virtual void handle([01;31m[KWalker[m[K *walker,
+[1.551s]       |                         [01;31m[K^~~~~~[m[K
+[1.551s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:144:17:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.551s]   144 |     void handle([01;31m[KWalker[m[K *walker,
+[1.551s]       |                 [01;31m[K^~~~~~[m[K
+[1.551s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:168:17:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.551s]   168 |     void handle([01;31m[KWalker[m[K *walker,
+[1.551s]       |                 [01;31m[K^~~~~~[m[K
+[1.553s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:28:11:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[KMain[m[K’
+[1.553s]    28 |  * @brief [01;31m[KMain[m[K robot control class implementing obstacle avoidance behavior.
+[1.553s]       |           [01;31m[K^~~~[m[K
+[1.553s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:125:25:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.553s]   125 |     virtual void handle([01;31m[KWalker[m[K *walker,
+[1.553s]       |                         [01;31m[K^~~~~~[m[K
+[1.553s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:144:17:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.553s]   144 |     void handle([01;31m[KWalker[m[K *walker,
+[1.553s]       |                 [01;31m[K^~~~~~[m[K
+[1.553s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:168:17:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.553s]   168 |     void handle([01;31m[KWalker[m[K *walker,
+[1.553s]       |                 [01;31m[K^~~~~~[m[K
+[1.553s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.553s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:26:32:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ was not declared in this scope
+[1.554s]    26 |   auto node = std::make_shared<[01;31m[KWalker[m[K>();
+[1.554s]       |                                [01;31m[K^~~~~~[m[K
+[1.554s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:26:39:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[1.554s]    26 |   auto node = [01;31m[Kstd::make_shared<Walker>()[m[K;
+[1.554s]       |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.554s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[1.554s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:10[m[K,
+[1.554s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+[1.554s]                  from [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/include/walker/walker_node.hpp:4[m[K,
+[1.554s]                  from [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:12[m[K:
+[1.554s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[1.554s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[1.554s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[1.554s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.554s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/main.cpp:26:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.554s]    26 |   auto node = [01;31m[Kstd::make_shared<Walker>()[m[K;
+[1.554s]       |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.554s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:10:1:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ does not name a type
+[1.554s]    10 | [01;31m[KWalker[m[K::Walker() : Node("walker"), rotation_direction_(1.0) {
+[1.554s]       | [01;31m[K^~~~~~[m[K
+[1.554s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:31:6:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.554s]    31 | void [01;31m[KWalker[m[K::scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr scan) {
+[1.554s]       |      [01;31m[K^~~~~~[m[K
+[1.559s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K In function ‘[01m[Kvoid scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.559s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:32:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_[m[K’ was not declared in this scope
+[1.559s]    32 |   [01;31m[Kcurrent_state_[m[K->handle(this, scan);
+[1.559s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.559s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:32:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[1.559s]    32 |   current_state_->handle([01;31m[Kthis[m[K, scan);
+[1.559s]       |                          [01;31m[K^~~~[m[K
+[1.559s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K At global scope:
+[1.559s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:41:6:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.559s]    41 | void [01;31m[KWalker[m[K::change_state(WalkerState* new_state) {
+[1.559s]       |      [01;31m[K^~~~~~[m[K
+[1.562s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K In function ‘[01m[Kvoid change_state(WalkerState*)[m[K’:
+[1.562s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:42:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_[m[K’ was not declared in this scope
+[1.562s]    42 |   delete [01;31m[Kcurrent_state_[m[K;
+[1.562s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.562s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K At global scope:
+[1.562s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:53:6:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.562s]    53 | void [01;31m[KWalker[m[K::publish_velocity(double linear, double angular) {
+[1.562s]       |      [01;31m[K^~~~~~[m[K
+[1.565s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K In function ‘[01m[Kvoid publish_velocity(double, double)[m[K’:
+[1.565s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:57:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[1.565s]    57 |   [01;31m[Kvel_publisher_[m[K->publish(msg);
+[1.565s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.565s]       |   [32m[Krcl_publisher_t[m[K
+[1.565s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K At global scope:
+[1.565s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:78:6:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.565s]    78 | bool [01;31m[KWalker[m[K::is_path_clear(
+[1.565s]       |      [01;31m[K^~~~~~[m[K
+[1.565s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:79:56:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kbool is_path_clear(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’ cannot have cv-qualifier
+[1.565s]    79 |     const sensor_msgs::msg::LaserScan::SharedPtr scan) [01;31m[Kconst[m[K {
+[1.565s]       |                                                        [01;31m[K^~~~~[m[K
+[1.567s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K In function ‘[01m[Kbool is_path_clear(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.568s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:87:27:[m[K [01;31m[Kerror: [m[K‘[01m[KSAFE_DISTANCE[m[K’ was not declared in this scope
+[1.568s]    87 |     if (scan->ranges[i] < [01;31m[KSAFE_DISTANCE[m[K) {
+[1.568s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[1.571s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:96:27:[m[K [01;31m[Kerror: [m[K‘[01m[KSAFE_DISTANCE[m[K’ was not declared in this scope
+[1.571s]    96 |     if (scan->ranges[i] < [01;31m[KSAFE_DISTANCE[m[K) {
+[1.571s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[1.571s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K At global scope:
+[1.571s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:111:6:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.571s]   111 | void [01;31m[KWalker[m[K::toggle_rotation_direction() { rotation_direction_ *= -1.0; }
+[1.571s]       |      [01;31m[K^~~~~~[m[K
+[1.575s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K In function ‘[01m[Kvoid toggle_rotation_direction()[m[K’:
+[1.575s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:111:44:[m[K [01;31m[Kerror: [m[K‘[01m[Krotation_direction_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktoggle_rotation_direction[m[K’?
+[1.575s]   111 | void Walker::toggle_rotation_direction() { [01;31m[Krotation_direction_[m[K *= -1.0; }
+[1.575s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.575s]       |                                            [32m[Ktoggle_rotation_direction[m[K
+[1.575s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K At global scope:
+[1.575s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:119:30:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ has not been declared
+[1.575s]   119 | rclcpp::TimerBase::SharedPtr [01;31m[KWalker[m[K::create_timer(
+[1.575s]       |                              [01;31m[K^~~~~~[m[K
+[1.575s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K In function ‘[01m[Krclcpp::TimerBase::SharedPtr create_timer(const std::chrono::duration<double>&, std::function<void()>)[m[K’:
+[1.575s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:122:10:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[1.575s]   122 |   return [01;31m[Kthis[m[K->create_wall_timer(period, callback);
+[1.575s]       |          [01;31m[K^~~~[m[K
+[1.575s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:[m[K At global scope:
+[1.575s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:134:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Khandle[m[K’ declared void
+[1.575s]   134 | void [01;31m[KRotationState[m[K::handle(Walker* walker,
+[1.575s]       |      [01;31m[K^~~~~~~~~~~~~[m[K
+[1.576s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:134:28:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ was not declared in this scope
+[1.576s]   134 | void RotationState::handle([01;31m[KWalker[m[K* walker,
+[1.576s]       |                            [01;31m[K^~~~~~[m[K
+[1.578s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:134:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kwalker[m[K’ was not declared in this scope
+[1.578s]   134 | void RotationState::handle(Walker* [01;31m[Kwalker[m[K,
+[1.578s]       |                                    [01;31m[K^~~~~~[m[K
+[1.578s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:135:28:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[1.579s]   135 |                            [01;31m[Kconst[m[K sensor_msgs::msg::LaserScan::SharedPtr scan) {
+[1.579s]       |                            [01;31m[K^~~~~[m[K
+[1.579s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:169:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Khandle[m[K’ declared void
+[1.579s]   169 | void [01;31m[KForwardState[m[K::handle(Walker* walker,
+[1.579s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[1.580s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:169:27:[m[K [01;31m[Kerror: [m[K‘[01m[KWalker[m[K’ was not declared in this scope
+[1.580s]   169 | void ForwardState::handle([01;31m[KWalker[m[K* walker,
+[1.580s]       |                           [01;31m[K^~~~~~[m[K
+[1.582s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:169:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kwalker[m[K’ was not declared in this scope
+[1.582s]   169 | void ForwardState::handle(Walker* [01;31m[Kwalker[m[K,
+[1.582s]       |                                   [01;31m[K^~~~~~[m[K
+[1.582s] [01m[K/home/kashif/SDR/temp3/my_gazebo_tutorials/walker/src/walker_node.cpp:170:27:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[1.582s]   170 |                           [01;31m[Kconst[m[K sensor_msgs::msg::LaserScan::SharedPtr scan) {
+[1.582s]       |                           [01;31m[K^~~~~[m[K
+[1.836s] gmake[2]: *** [CMakeFiles/robot_control.dir/build.make:76: CMakeFiles/robot_control.dir/src/main.cpp.o] Error 1
+[1.837s] gmake[2]: *** Waiting for unfinished jobs....
+[1.867s] gmake[2]: *** [CMakeFiles/robot_control.dir/build.make:90: CMakeFiles/robot_control.dir/src/walker_node.cpp.o] Error 1
+[1.867s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_control.dir/all] Error 2
+[1.867s] gmake: *** [Makefile:146: all] Error 2
+[1.870s] Invoked command in '/home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kashif/SDR/temp3/my_gazebo_tutorials/build/walker -- -j20 -l20
